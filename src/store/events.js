@@ -1,4 +1,9 @@
 import axios from "axios";
+axios.defaults.headers = {
+  "Cache-Control": "no-cache",
+  Pragma: "no-cache",
+  Expires: "0",
+};
 const baseUrl = "https://d706d748-0586-4c2b-9d30-288f5d3b0630.mock.pstmn.io";
 
 const state = {
